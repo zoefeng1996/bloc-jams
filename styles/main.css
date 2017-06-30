@@ -17,9 +17,6 @@ html {
  body.landing {
      background-color: rgb(58,23,63); /* sets the background color to an RGB value (see below) */
  }
- body.landing {
-      background-color: rgb(58,23,63);
-  }
 
   .navbar {
       padding: 0.5rem;
@@ -31,12 +28,12 @@ html {
       left: 2rem;
   }
   .hero-content {
-       position: relative; /* positioning will be explained in a resource */
-       min-height: 600px;  /* hero content element must be _at least_ 600 pixels */
-       background-image: url(../assets/images/bloc_jams_bg.jpg);
-       background-repeat: no-repeat;
-       background-position: center center;
-       background-size: cover;
+      position: relative; /* positioning will be explained in a resource */
+      min-height: 600px;  /* hero content element must be _at least_ 600 pixels */
+      background-image: url(../assets/images/bloc_jams_bg.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
    }
    .hero-content .hero-title {
        position: absolute;             /* positioning will be explained in a resource */
@@ -80,3 +77,11 @@ html {
        color: rgb(233,50,117);
        font-size: 5rem;
    }
+   .clearfix::before,
+   .clearfix::after {
+      content: " ";
+      display: table;
+   }
+
+   .clearfix::after {
+      clear: both;
